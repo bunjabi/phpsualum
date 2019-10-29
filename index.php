@@ -1,10 +1,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> <?php print 'Að,'. date('l') . 'ir PHP'; ?> </title>
+    <title> PHP lydës ir <?php print date('Y-m-d', strtotime('+1 day') ) ; ?> </title>
   </head>
   <body>
-      <h1>Inija-HTML <?php print 'ir PHP'; ?> asë jau nuo <?php print date('Y') . 'metø';?></h1>
-    <p>Viskas prasidëjo <?php print date('F') . 'mënesio' . date('d') . 'dienà!';?></p>
+      <h1><b>Inija</b>- PHP su mainm buvo ir <?php print date('H', strtotime('- 1 hour')); ?></h1>
+    <p> <?php print date('Y', strtotime('+1 year'))?> ne uþ kalnø</p>
   </body>
 </html>
