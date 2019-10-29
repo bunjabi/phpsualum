@@ -7,7 +7,7 @@
       <h1>
             <b>Inija</b> - Galbût turësiu <?php print rand(1,5); ?> vaikus!
       </h1>
-      <p> D. Trumpas nebebus prezidentu:<?php print date('Y-m-d'. strtotime('+' . rand(2,10) . 'years')); ?>  </p>
+      <p> D. Trumpas nebebus prezidentu:<?php print date('Y-m-d' . strtotime('+' . rand(2,10) . 'years')); ?>  </p>
      
   </body>
 </html>
