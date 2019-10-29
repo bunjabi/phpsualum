@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Að valdau HTML</title> 
+    <title>AÅ¡ valdau HTML</title>
   </head>
   <body>
-    <h1>Inija-HTML asë!</h1>
-    <p>Kuriu dinaminá turiná. Atidaryta:</p> <?php date($time) ?>
+    <h1>Inija-HTML asÄ—!</h1>
+    <p>Kuriu dinaminÄ¯ turinÄ¯. Atidaryta:</p> <?php date($time) ?>
   </body>
 </html>
