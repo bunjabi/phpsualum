@@ -1,7 +1,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> PHP lydës ir <?php print date('Y-m-d', strtotime('+' . rand(0,10) . 'year';) ?></title>
+    <title> PHP lydës ir <?php print date('Y-m-d', strtotime('+' . rand(0,10) . 'year'); ?></title>
   </head>
   <body>
       <h1>
