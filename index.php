@@ -1,12 +1,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> PHP lydës ir <?php print date('Y-m-d', strtotime('+' . rand(0,10) . 'year')); ?></title>
+    <title></title>
+    <style>
+        body {background-color: rgb(<?php rand(0,255);?>)}
+        h1 {font-size: <?php rand(0,500);?> px)}
+        p {color: rgb(<?php rand(0,255);?>)}
+    </style> 
   </head>
   <body>
-      <h1>
-            <b>Inija</b> - Galbût turësiu <?php print rand(1,5); ?> vaikus!
-      </h1>
-      <p> D. Trumpas nebebus prezidentu:<?php print date('Y-m-d' , strtotime('+' . rand(2,10) . 'years')); ?>  </p> 
+      <h1> As keiciu dydi </h1>
+      <p> As keiciu spalva </p>
   </body>
 </html>
