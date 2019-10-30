@@ -4,7 +4,7 @@
     <title></title>
     <style>
         .kubas{
-            background-image: url("images\dice-<?php print rand(1,6);?>");
+            background-image: url("images\dice-<?php print rand(1,6);?> . '.png'");
             width: 200px;
             height: 200px;
         }
