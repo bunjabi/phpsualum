@@ -2,14 +2,17 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        .body {background-color: rgb(<?php print rand(0,255);? . ',' . rand(0,255) . ',' . rand(0,255);?>)}
-        .h1 {font-size: <?php print rand(0,500);?> px}
-        .p {color: rgb(<?php print rand(0,255);? . ',' . rand(0,255) . ',' . rand(0,255);?>)}
-    </style> 
+        .kubas{
+            background-image: url("images\dice-<?php print rand(1,6);?>");
+            width: 200px;
+        }
+    </style>
   </head>
-  <body class='body'>
-      <h1 class='h1'> As keiciu dydi </h1>
-      <p class='p'> As keiciu spalva </p>
+  <body>
+    <div class="kubas">
+    </div>
+
   </body>
 </html>
