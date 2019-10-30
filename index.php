@@ -8,8 +8,8 @@
         p {color: rgb(<?php rand(0,255);?>,<?php rand(0,255);?>,<?php rand(0,255);?>)}
     </style> 
   </head>
-  <body>
-      <h1> As keiciu dydi </h1>
-      <p> As keiciu spalva </p>
+  <body class='body'>
+      <h1 class='h1'> As keiciu dydi </h1>
+      <p class='p'> As keiciu spalva </p>
   </body>
 </html>
