@@ -3,9 +3,9 @@
     <meta charset="utf-8">
     <title></title>
     <style>
-        body {background-color: rgb(<?php rand(0,255);?>)}
+        body {background-color: rgb(<?php rand(0,255);?>,<?php rand(0,255);?>,<?php rand(0,255);?>)}
         h1 {font-size: <?php rand(0,500);?> px)}
-        p {color: rgb(<?php rand(0,255);?>)}
+        p {color: rgb(<?php rand(0,255);?>,<?php rand(0,255);?>,<?php rand(0,255);?>)}
     </style> 
   </head>
   <body>
