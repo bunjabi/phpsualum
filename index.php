@@ -7,12 +7,11 @@
         .kubas{
             background-image: url("images\dice-<?php print rand(1,6);?>");
             width: 200px;
+            height: 200px;
         }
     </style>
   </head>
   <body>
-    <div class="kubas">
-    </div>
-
+    <div class="kubas"></div>
   </body>
 </html>
