@@ -1,8 +1,5 @@
 <?php
-    $li_1= 'sveiki';
-    $li_2= 123;
-    $li_3= true;
-    $li_4= null;
+   $img='images/suo.jpg'
  ?>
 <html lang="en" dir="ltr">
   <head>
@@ -10,11 +7,9 @@
     <title></title>
   </head>
   <body>
-    <ul>
-        <li>String tipas: <?php print $li_1;?></li>
-        <li>Integer tipas: <?php print $li_2;?></li>
-        <li>Boolean tipas: <?php print $li_3;?></li>
-        <li>Null tipas: <?php print $li_4;?></li>
-    </ul>
+   <img src="<?php print $img; ?>">
+   <img src="<?php print $img; ?>">
+   <img src="<?php print $img; ?>">
+   <img src="<?php print $img; ?>">
   </body>
 </html>
