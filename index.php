@@ -9,9 +9,11 @@
     <title>Skolos Skaiciuokle</title>
   </head>
   <body>
-    <h1>Skolos skaiciuokle</h1>
-    <h3>Jei paėmei <?php print $h1_skola;?> jievrų</h3>
-    <h3>Su dviem kabančiais grąžinsi <?php print $h3_2kab;?></h3>
-    <h3>Su vienu kabančiu grąžinsi <?php print $h3_1kab;?></h3>
+    <div>
+        <h1>Skolos skaiciuokle</h1>
+        <h3>Jei paėmei <?php print $h1_skola;?> jievrų</h3>
+        <h3>Su dviem kabančiais grąžinsi <?php print $h3_2kab;?></h3>
+        <h3>Su vienu kabančiu grąžinsi <?php print $h3_1kab;?></h3>
+    </div>
   </body>
 </html>
