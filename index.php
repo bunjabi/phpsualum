@@ -2,10 +2,10 @@
     $bin_vol = 40;
     $bin_heap_vol = rand(5,20);
     $trash_per_day = 15;
-    $days = floor((40 + $bin_heap_vol) / 15 );
-    $p_trashcan = 'Turima šiukšlinė - <?php print $bin_vol; ?> litrų';
-    $p_zmona_pyks = 'Žmona nieko nesako, kol kaupas neviršija <?php print $bin_heap_vol; ?>';
-    $h3_lazy_days = 'nieko nedarysiu <?php print $days; ?> dienas';
+    $days = floor(($bin_vol + $bin_heap_vol) / 15 );
+    $p_trashcan = "Turima šiukšlinė - $bin_vol";
+    $p_zmona_pyks = "Žmona nieko nesako, kol kaupas neviršija $bin_heap_vol litru" ;
+    $h3_lazy_days = "nieko nedarysiu  $days dienas";
  ?>
 <html lang="en" dir="ltr">
   <head>
