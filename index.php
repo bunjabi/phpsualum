@@ -1,26 +1,21 @@
 <?php
-    $h2_1='Grizai velai';
-    $h2_2='Grizai velai ir isgeres';
-    $h2_3='Grizai isgeres';
-    $h2_4='Nieko nepadare';
-    $h2=null;
-    $grizai_velai= rand(0,1);
-    $grizai_isgeres=rand(0,1);
-    $h3_miegosi='nemiegosi';
-    $h3="$h3_miegosi ant sofos";
 
-    if ($grizai_isgeres){
-        if ($grizai_velai){
-            $h2= 'Grizai velai ir isgeres';
-            $h3_miegosi='miegosi;';
+    $h2 = null;
+    $grizai_velai = rand(0, 1);
+    $grizai_isgeres = rand(0, 1);
+    $h3_miegosi = 'nemiegosi';
+    $h3 = "$h3_miegosi ant sofos";
+
+    if ($grizai_isgeres) {
+        if ($grizai_velai) {
+            $h2 = 'Grizai velai ir isgeres';
+            $h3_miegosi = 'miegosi;';
         }
-        $h2='grizai isgeres';
-    }
-    elseif($grizai_velai){
-        $h2='Grizai velai';
-    }
-    else{
-        $h2='Nieko nepadarei';
+        $h2 = 'grizai isgeres';
+    } elseif ($grizai_velai) {
+        $h2 = 'Grizai velai';
+    } else {
+        $h2 = 'Nieko nepadarei';
     }
 
 ?>
