@@ -5,24 +5,28 @@
     $int = 1;
     $flt = 1.23;
     $str_1 = "1.23";
+    $equals = null;
+    $li_1="Bool (true) ir Integer (1):$equals";
+    $li_2="String (1) ir Boolean (1):$equals";
+    $li_3="Float (1.23) ir String (1.23):$equals";
 
     if ($bool === $int) {
-        $li_1 = 'Identiski';
+        $equals = 'Identiski';
     }
     elseif ($bool == $int) {
-        $li_1 = 'Lygus';
+        $equals = 'Lygus';
     }
     if ($str === $bool) {
-        $li_2 = 'Identiski';
+        $equals = 'Identiski';
     }
     elseif ($str == $bool) {
-        $li_2 = 'Lygus';
+        $equals = 'Lygus';
     }
     if ($flt === $str_1) {
-        $li_3 = 'Identiski';
+        $equals = 'Identiski';
     }
     elseif ($flt == $str_1) {
-        $li_3 = 'Lygus';
+        $equals = 'Lygus';
     }
 
 ?>
