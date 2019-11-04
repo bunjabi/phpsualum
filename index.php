@@ -1,42 +1,37 @@
 <?php
 
-    $sunny = rand(0, 1);
-    $orai = ['Debesuota', 'Sauleta'];
-    if ($sunny) {
-        $oras = $orai[1];
-        $style = 'sauleta';
-    } else {
-        $oras = $orai[0];
-        $style = 'debesuota';
+    $bool = true;
+    $str = "1";
+    $int = 1;
+    $flt = 1.23;
+    $str_1 = "1.23";
+
+    if ($bool === $int) {
+        $li_1 = 'Identiski';
+    }
+    elseif ($bool == $int) {
+        $li_1 = 'Lygus';
+    }
+    if ($str === $bool) {
+        $li_2 = 'Identiski';
+    }
+    elseif ($str == $bool) {
+        $li_2 = 'Lygus';
+    }
+    if ($flt === $str_1) {
+        $li_3 = 'Identiski';
+    }
+    elseif ($flt == $str_1) {
+        $li_3 = 'Lygus';
     }
 
 ?>
 <html lang="en" dir="ltr">
-<head>
-    <style>
-        div {
-            width: 300px;
-            height: 300px;
-            background-position: center;
-        }
-
-        .sauleta {
-            background-image: url("https://i.dlpng.com/static/png/1397265-chocolate-melting-in-the-sun-melting-sun-png-300_250_preview.png");
-        }
-
-        .debesuota {
-            background-image: url("https://cdn.drawception.com/images/panels/2018/1-7/wL99Mkqwh1-2.png");
-        }
-
-        body {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-    </style>
-</head>
-<body>
-<div class="<?php print $style; ?>"></div>
-<p><?php print $oras; ?></p>
-</body>
+    <body>
+        <ul>
+            <li><?php print $li_1; ?></li>
+            <li><?php print $li_2; ?></li>
+            <li><?php print $li_3; ?></li>
+        </ul>
+    </body>
 </html>
