@@ -1,38 +1,36 @@
 <?php
+$h2_1='Grizai velai';
+$h2_2='Grizai velai ir isgeres';
+$h2_3='Grizai isgeres';
+$h2_4='Nieko nepadare';
+$h2=null;
 
-$distance = rand(1, 5000);
-$consumption = 7.5;
-$price_l = 1.3;
-$fuel_total = round(($distance / 100 * $consumption), 2);
-$price_trip = round(($fuel_total * $price_l), 2);
-$my_money = 100;
-$uzteks = '';
-if ($fuel_total > $my_money) {
-    $uzteks = 'neužteks';
-} else {
-    $uzteks = 'užteks';
+$grizai_velai= rand(0,1);
+$grizai_isgeres=rand(0,1);
+
+if ($grizai_isgeres){
+    if ($grizai_velai){
+        $h2= $h2_2;
+    }
+    $h2=$h2_3;
 }
-$li_1 = "Nuvažiuota distancija: $distance";
-$li_2 = "Sunaudota $fuel_total litrai kuro";
-$li_3 = "Sumokėta už kurą $price_trip pinigai";
-$li_4 = "Turimi pinigai: $my_money";
-$li_5 = "Išvada: kelionei $uzteks";
+elseif($grizai_velai){
+    $h2=$h2_1;
+}
+else{
+    $h2=$h2_4;
+}
 
 ?>
+
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <title>Kelionės skaičiuoklė</title>
+
 </head>
 <body>
-<h1>Kelionės skaičiuoklė</h1>
-<ul>
-    <li><?php print $li_1 ?></li>
-    <li><?php print $li_4 ?></li>
-    <li><?php print $li_2 ?></li>
-    <li><?php print $li_3 ?></li>
-    <hr>
-    <p><?php print $li_5; ?></p>
-</ul>
+    <h1> Buitine skaiciuokle </h1>
+    <h2><?php print $h2; ?> </h2>
+
+
 </body>
 </html>
