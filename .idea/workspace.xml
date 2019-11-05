@@ -35,6 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../html css/uzd5.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,7 +71,7 @@
       <updated>1572441545831</updated>
       <workItem from="1572441546980" duration="15182000" />
       <workItem from="1572856036491" duration="8202000" />
-      <workItem from="1572914555428" duration="7825000" />
+      <workItem from="1572914555428" duration="8959000" />
     </task>
     <servers />
   </component>

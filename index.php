@@ -7,11 +7,13 @@ $month_expenses = null;
 
 for ($i = 1; $i <= 12; $i++) {
     $month_expenses = rand(300, 700);
-    $wallet = +700;
-    $wallet = -$month_expenses;
+    $wallet += $month_income - $month_expenses;
+    if ($wallet < 0) {
+        $h2 = "atsargiai, $i menesi gali baigtis pinigai!";
+        break;
+    }
+    $h2 = "po $months m., prognazuojamas likutis: $wallet";
 }
-
-$h2 = "Po $months m., prognazuojamas likutis $wallet";
 
 ?>
 <html lang="en" dir="ltr">
