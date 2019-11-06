@@ -1,24 +1,33 @@
 <?php
 
-$months = 12;
-$wallet = 1000;
-$month_income = 700;
-$month_expenses = null;
+$days = 365;
+$pack_price = 3.95;
+$count_ttl = null;
+$date=date(DATE_RSS);
+$time_per_cig=null;
+$time_ttl= null;
 
-for ($i = 1; $i <= 12; $i++) {
-    $month_expenses = rand(300, 700);
-    $wallet += $month_income - $month_expenses;
-    if ($wallet < 0) {
-        $h2 = "atsargiai, $i menesi gali baigtis pinigai!";
-        break;
+for ($i=0;$i<$days;$i++){
+    $week_day=date('N', strtotime('+' . $i . 'day'));
+    if($week_day==7){
+        $count_ttl+=rand(0,5);
     }
-    $h2 = "po $months m., prognazuojamas likutis: $wallet";
+    elseif($week_day==6){
+        $count_ttl+=rand(5,20);
+    }
+    else{
+        $count_ttl+=rand(2,9);
+    }
 }
+
+$price_ttl = ceil($count_ttl / 20)*3.95;
+$h2 = "Per $days dienas, surukysiu $count_ttl cigareciu uz $price_ttl euru";
+
 
 ?>
 <html lang="en" dir="ltr">
     <body>
-        <h1> Wallet forecast</h1>
-        <h2><?php print $h2; ?></h2>
+        <h1>Mano dumu skaiciuokle</h1>
+        <h2><?php print $h2 ?></h2>
     </body>
 </html>
