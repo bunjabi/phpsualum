@@ -1,33 +1,17 @@
 <?php
+$petrol_in_tank=rand(5,30);
 
-$days = 365;
-$pack_price = 3.95;
-$count_ttl = null;
-$date=date(DATE_RSS);
-$time_per_cig=null;
-$time_ttl= null;
-
-for ($i=0;$i<$days;$i++){
-    $week_day=date('N', strtotime('+' . $i . 'day'));
-    if($week_day==7){
-        $count_ttl+=rand(0,5);
-    }
-    elseif($week_day==6){
-        $count_ttl+=rand(5,20);
-    }
-    else{
-        $count_ttl+=rand(2,9);
-    }
+for($diesel = 1; ($diesel / $petrol_in_tank) <= 0.1; $diesel++){
+    $petrol_in_tank++;
 }
-
-$price_ttl = ceil($count_ttl / 20)*3.95;
-$h2 = "Per $days dienas, surukysiu $count_ttl cigareciu uz $price_ttl euru";
-
-
+$h2="benzino buvo: $petrol_in_tank";
+$h3="max dyzelio riba: $diesel";
 ?>
 <html lang="en" dir="ltr">
+
     <body>
-        <h1>Mano dumu skaiciuokle</h1>
-        <h2><?php print $h2 ?></h2>
+        <h1>Pripylei dyzelio i benz. masina?</h1>
+        <h2><?php print $h2; ?></h2>
+        <h3><?php print $h3; ?></h3>
     </body>
 </html>
