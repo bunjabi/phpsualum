@@ -9,7 +9,7 @@ for ($i = 0; $i < $months; $i++) {
     $car_price_used -= round($car_price_used * 0.02, 2);
 }
 
-$depr_prec = 100 - $car_price_used / $car_price_new;
+$depr_prec = 100 - ($car_price_used / $car_price_new * 100);
 $h2 = "Naujos masinos kaina $car_price_new";
 $h3 = "po $months men, masinos verte bus: $car_price_used eur";
 $h4 = "Masina nuevertes $depr_prec proc."
