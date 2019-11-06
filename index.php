@@ -1,7 +1,9 @@
 <?php
 $petrol_in_tank=rand(5,30);
+$tank=$petrol_in_tank;
 
-for($diesel = 1; ($diesel / $petrol_in_tank) <= 0.1; $diesel++){
+for($diesel = 1; ($diesel / $tank) <= 0.1; $diesel++){
+    $tank = $diesel+$petrol_in_tank;
     $petrol_in_tank++;
 }
 $h2="benzino buvo: $petrol_in_tank";
