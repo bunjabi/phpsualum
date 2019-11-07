@@ -1,23 +1,29 @@
 <?php
-$bowlingo_takeliai= [
-                [
-                    'kegliu_eiles' =>[
-                            [1,0,0,1],
-                            [0,0,1],
-                            [0,1],
-                            [1]
-                    ],
-                    'busena' =>'zjbs'
-                ],
-                [
-                    'kegliu_eiles' =>[
-                        [0,0,0,0],
-                        [0,0,0],
-                        [0,0],
-                        [0]
-                    ],
-                    'busena' =>'piss lake'
-                ]
+$posukiai= [
+        [
+                'kryptis'=>'desine',
+                'laipsniai'=>90
+        ],
+        [
+                'kryptis'=>'kaire',
+                'laipsniai'=>20
+        ],
+        [
+                'kryptis'=>'desine',
+                'laipsniai'=>160
+        ],
+        [
+                'kryptis'=>'kaire',
+                'laipsniai'=>160
+        ],
+        [
+                'kryptis'=>'desine',
+                'laipsniai'=>180
+        ],
+        [
+               'kryptis'=>'desine',
+               'laipsniai'=>30
+        ]
 ];
- var_dump($bowlingo_takeliai);
+ var_dump($posukiai);
 
