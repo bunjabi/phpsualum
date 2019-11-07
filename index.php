@@ -1,52 +1,23 @@
 <?php
-$parde= [
-       'lentynos' => [
-               [
-                       [
-                               'produktas' => 'kiausinis',
-                               'kiekis' => 3
-
-                       ],
-                       [
-                               'produktas' => 'girtine',
-                               'kiekis' => 1
-
-                       ],
-                       [
-                               'produktas' => 'jogurtas',
-                               'kiekis' => 2
-
-                       ],
-                       [
-                               'produktas' => 'zuvis',
-                               'kiekis' => 0
-
-                       ]
-
-               ],
-               [
-                   [
-                       'produktas' => 'pienas',
-                       'kiekis' => 1
-
-                   ],
-                   [
-                       'produktas' => 'kefyras',
-                       'kiekis' => 0
-
-                   ],
-                   [
-                       'produktas' => 'degtine',
-                       'kiekis' => '2'
-
-                   ],
-                   [
-                       'produktas' => 'keciupas',
-                       'kiekis' => 2
-
-                   ],
-               ]
-       ]
+$bowlingo_takeliai= [
+                [
+                    'kegliu_eiles' =>[
+                            [1,0,0,1],
+                            [0,0,1],
+                            [0,1],
+                            [1]
+                    ],
+                    'busena' =>'zjbs'
+                ],
+                [
+                    'kegliu_eiles' =>[
+                        [0,0,0,0],
+                        [0,0,0],
+                        [0,0],
+                        [0]
+                    ],
+                    'busena' =>'piss lake'
+                ]
 ];
- var_dump($parde);
+ var_dump($bowlingo_takeliai);
 
