@@ -1,17 +1,32 @@
 <?php
-$maistas= [
-       'Kiausinis' => [
-               'kiekis' => 2,
-               'dydis' => 'didelis'
+$character_select= [
+       [
+           'name' => 'Petro',
+           'last_name' =>'Pizdzio',
+           'tools' =>[ [
+                   'type' => 'prapistas',
+                   'state' =>'telefonas'
+           ]
+           ]
        ],
-       'baklazanas' => [
-               'kiekis' => 1,
-               'dydis' => 'mazas'
+       [
+           'name' => 'Tomo',
+           'last_name' =>'Ablomo',
+           'tools' =>[ [
+               'type' => 'naudojamas',
+               'state' =>'buljonas'
+           ]
+           ]
        ],
-       'gritines indelis' => [
-               'kiekis' => 1,
-               'didelis' => 'didelis'
+       [
+           'name' => 'Ana',
+           'last_name' =>'Shitkova',
+           'tools' =>[ [
+               'type' => 'pasibaiges',
+               'state' =>'rulonas'
+           ]
+           ]
        ]
 ];
- var_dump($maistas);
+ var_dump($character_select);
 
