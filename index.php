@@ -1,9 +1,17 @@
 <?php
-$maistas= ['Kiausinis','Baklazanas','Obuolys'];
-$dumpas= var_dump($maistas);
-?>
-<html>
-    <body>
-    <p><?php print $dumpas;?></p>
-    </body>
-</html>
+$maistas= [
+       'Kiausinis' => [
+               'kiekis' => 2,
+               'dydis' => 'didelis'
+       ],
+       'baklazanas' => [
+               'kiekis' => 1,
+               'dydis' => 'mazas'
+       ],
+       'gritines indelis' => [
+               'kiekis' => 1,
+               'didelis' => 'didelis'
+       ]
+];
+ var_dump($maistas);
+
